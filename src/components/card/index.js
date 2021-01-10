@@ -2,7 +2,7 @@ import React from 'react';
 import './styles.css';
 
 
-export default function Card ({text, trees, changeConsole, cold}) {
+export default function Card ({text, trees, changeConsole, cold, setTheme}) {
 
 changeConsole();
     return (
@@ -10,6 +10,8 @@ changeConsole();
             {text}
             {trees}
             {cold}
+            <button onClick={ () => setTheme('grey')}>ChangeTheme</button>
         </div>
+
     )
 }

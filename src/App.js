@@ -9,7 +9,13 @@ function App() {
 
   return (
     <div className="App" className={theme}>
-      <Card text="default text" cold={true} trees={[23, 54, 46]} changeConsole={() => console.log('changed')} />
+      <Card
+      text="default text"
+      cold={true}
+      trees={[23, 54, 46]}
+      changeConsole={() => console.log('changed')}
+      setTheme={setTheme}
+      />
     </div>
   );
 }
