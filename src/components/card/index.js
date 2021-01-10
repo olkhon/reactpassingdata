@@ -1,5 +1,6 @@
 import React from 'react';
 import './styles.css';
+import Button from '../button'
 
 
 export default function Card ({text, trees, changeConsole, cold, toggleTheme}) {
@@ -10,7 +11,7 @@ changeConsole();
             {text}
             {trees}
             {cold}
-            <button onClick={toggleTheme}>ChangeTheme</button>
+           <Button toggleTheme={toggleTheme} />
         </div>
 
     )

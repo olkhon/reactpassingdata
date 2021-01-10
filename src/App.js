@@ -16,6 +16,7 @@ function App() {
       changeConsole={() => console.log('changed')}
       toggleTheme = { () => setTheme('grey')}
       />
+
     </div>
   );
 }
