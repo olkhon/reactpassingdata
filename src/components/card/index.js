@@ -1,10 +1,10 @@
 import React from 'react';
 import './styles.css';
 
-export default function Card () {
+export default function Card ({text}) {
     return (
         <div>
-            Hello World Card
+            {text}
         </div>
     )
 }
