@@ -14,7 +14,7 @@ function App() {
       cold={true}
       trees={[23, 54, 46]}
       changeConsole={() => console.log('changed')}
-      setTheme={setTheme}
+      toggleTheme = { () => setTheme('grey')}
       />
     </div>
   );
